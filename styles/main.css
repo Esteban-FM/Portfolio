@@ -1,0 +1,35 @@
+
+/*
+body{ background: linear-gradient(to bottom right,#403F44, #1E1B32);
+}
+*/
+:root{
+    --rojo:#e50914;
+    --blanco:#fff;
+    --gris:#303030;
+    --gris-f:#757575;
+    --negro:#000;
+    --tipo-titular:'PT Serif', serif;
+    --tipo-principal:'Nunito', sans-serif;
+}
+
+.header{
+    width:100%;
+    min-height:5rem;
+    background: #lightblue;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .h1{
+    background: #757575;
+}
+.header .h1 .a{}
+.header .nav{
+    background: #e50914;
+}
+.header .ul{}
+.header .li{}
+.header .li .a{}
