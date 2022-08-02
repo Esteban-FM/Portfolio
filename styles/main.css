@@ -1,25 +1,18 @@
 :root{
-    --rojo:#e50914;
     --blanco:#fff;
     --gris:#303030;
     --gris-f:#757575;
     --negro:#000;
     --grandient-brown:linear-gradient(to bottom right,#f1e7e8, #f7e5cb);
-    --grandient-card:linear-gradient(to bottom right,#9847ff 0%, #c447ff 100%);
     --tipo-titular:'PT Serif', serif;
     --tipo-principal:'Nunito', sans-serif;
-}
-h5{
-    color: #000;
-    font-size: 23px;
-    margin-bottom: 15px;
 }
 
 /* 
 .header{
     width:100%;
     min-height:5rem;
-
+    
     padding:1em 2em;
 
     display: flex;
@@ -42,8 +35,13 @@ h5{
     padding: 1em;
 } */
 
+h5{
+    color: #000;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
 .header{
-	width: 100%;
+    width: 100%;
     min-height:5rem;
 	background: var(--grandient-brown);
 	background-size: cover;
@@ -81,9 +79,6 @@ nav ul li a:hover{
 	color: #000;
 	transition: .4s;
 }
-
-
-
 
 
 
@@ -170,7 +165,6 @@ nav ul li a:hover{
 .section .a{}
 .section .figure{
     width: 100%;
-    background: #e50914;
 }
 .section .img{
     width: 100%;
@@ -223,7 +217,6 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-
 /* .works{
     color:var(--blanco);
   }
@@ -231,8 +224,6 @@ nav ul li a:hover{
     margin: 0 0 1rem;
     color:inherit;
 } */
-
-
 
 
 button{
@@ -243,7 +234,7 @@ button{
 	font-weight: bold;
 	padding: 13px 30px;
 	border-radius: 30px;
-	transition: .4s; 
+	transition: .4s;
 }
 button:hover{
 	background-color: transparent;
@@ -285,8 +276,6 @@ button:hover{
 	display: block;
 	text-align: center;
 	margin: 25px 0px;
-	
-
 }
 .pra p{
 	color: #000;
@@ -322,7 +311,7 @@ button:hover{
 }
 
 
-
+/* About */
 
 .about{}
 .about .h2{
@@ -413,10 +402,7 @@ padding-bottom: 4em;
     padding-inline-start: .5em;
   }
   
-  .form label span {
-    color: #DA1414;
-  }
-  
+
   .form input, .form textarea {
     box-sizing: border-box;
     width: 100%;
@@ -446,10 +432,6 @@ padding-bottom: 4em;
     opacity: 0;
   }
 
-
-
-
-
 .b-example-divider {
     height: 1rem;
     background-color: rgba(0, 0, 0, .1);
@@ -457,15 +439,6 @@ padding-bottom: 4em;
     border-width: 0px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
-
-
-
-
-
-
-
-
-
 
 .footer{
     padding:  2e 0;
