@@ -5,10 +5,17 @@
     --gris-f:#757575;
     --negro:#000;
     --grandient-brown:linear-gradient(to bottom right,#f1e7e8, #f7e5cb);
+    --grandient-card:linear-gradient(to bottom right,#9847ff 0%, #c447ff 100%);
     --tipo-titular:'PT Serif', serif;
     --tipo-principal:'Nunito', sans-serif;
 }
+h5{
+    color: #000;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
 
+/* 
 .header{
     width:100%;
     min-height:5rem;
@@ -33,7 +40,52 @@
 }
 .header .li{
     padding: 1em;
+} */
+
+.header{
+	width: 100%;
+    min-height:5rem;
+	background: var(--grandient-brown);
+	background-size: cover;
+	background-position: center;
 }
+.header .h2{    font-family: var(--tipo-titular);
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1em;
+    cursor: pointer;}
+    
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1em;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.title{
+	cursor: pointer;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul  a{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #000;
+	transition: .4s;
+}
+
+
+
+
+
 
 .main{
     background:var(--grandient-brown);
@@ -41,13 +93,11 @@
     text-align: center;
 }
 
-
-
 .section{
     width:100%;
     min-height: 60vh;
-    background: #lightblue;
-    margin:  1em 0;
+    /* background: #lightblue; */
+    /* margin:  1em 0; */
     padding: 2em;
 
     display: flex;
@@ -56,15 +106,13 @@
     align-items: center;
     align-content: space-around;
 }
-
-
 .section .info{
     font-size: 1.2em;
 }
 .section .circulos{}
 .section .circulo{}
 .section .ul{
-    margin: 1em 0 0;
+    margin: -1em 0 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -78,27 +126,29 @@
     padding: 1em 1em 1em;
     font-weight: 600;
 }
-.section .ul .a:hover{ 
+.section .ul .a:hover{
     border-color: black;
-
 }
-
 .section .h2{
     font-family: var(--tipo-titular);
     font-weight: 600;
     font-size: 3em;
     line-height:1em;
+    cursor: pointer;
 }
 .section .h3{
     font-family: var(--tipo-titular);
     font-size: 2em;
+    cursor: pointer;
 }
-.section .p{}
+.section .p{
+    padding: 0 20%;
+}
 .section .grid{
     width: 90%;
     max-width: 40em;
     margin: 1em 0;
-  
+
     display: grid;
     grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
     gap:1em;
@@ -133,12 +183,12 @@
     position: absolute;
     bottom:0;
     left:0;
-    
+
     display: flex;
     flex-flow: row wrap ;
     justify-content: center;
     align-items: center;
-    
+
     color:var(--blanco);
     font-size: 1.8em;
     font-family: var(--tipo-titular);
@@ -152,21 +202,135 @@
     transform:translateZ(1) scale(1);
 }
 .section .h2{}
+.services {
+    width:100%;
+    min-height: 10vh;
+    /* background: #lightblue; */
+    /* margin:  1em 0; */
+    padding: 2em;
 
-.works{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+.services .h2{
+    font-family: var(--tipo-titular);
+    font-weight: 600;
+    font-size: 3em;
+    line-height:1em;
+    cursor: pointer;
+}
+
+
+/* .works{
     color:var(--blanco);
   }
 .works .h2{
     margin: 0 0 1rem;
     color:inherit;
+} */
+
+
+
+
+button{
+	background-color:#000;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
 }
+button:hover{
+	background-color: transparent;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+.service{
+	width: 100%;
+	padding: 40px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+    cursor: pointer;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.box .card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #fff;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	
+
+}
+.pra p{
+	color: #000;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#000;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+.btn{
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s;
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+
+
+
 
 .about{}
 .about .h2{
     margin:  0 0 1em;
+    cursor: pointer;
 }
 .about .p{
-    max-width: 60em;
+    max-width: 34em;
     margin: 0 0 lem;
     text-align: center;
 }
@@ -189,6 +353,102 @@
     height:3em;
 }
 
+/* Service Card's */
+
+.container{
+    width: 400px;
+    height: 240px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--grandient-card);
+}
+.card {
+    --x-pos: 0.5;
+    --y-angle: calc(var(--x-pos)*5deg);
+
+    --y-pos: 0;
+    --x-angle: calc(var(--y-pos)*5deg);
+
+    transform:
+    perspective(200px)
+    rotateY(var(--y-angle))
+    rotateX(var(--x-angle));
+
+}
+.container h2{
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+
+/* Contact */
+.contact .h2{
+  font-family: var(--tipo-titular);
+  font-weight: 600;
+  font-size: 3em;
+  line-height:1em;
+  cursor: pointer;
+}
+.contact {
+margin-block-end: 5em;
+padding-bottom: 4em;
+}
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+  .form textarea {
+    margin-block-end: 2em;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+  }
+.contact .send{
+    background-color: #000;
+      color: white;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 9px 22px;
+      border-radius: 30px;
+      transition: .4s;
+}
+#email-contact {
+    opacity: 0;
+  }
+
+
+
+
 
 .b-example-divider {
     height: 1rem;
@@ -200,16 +460,16 @@
 
 
 
+
+
+
+
+
+
+
 .footer{
     padding:  2e 0;
     text-align: center;
 }
 .footer .span{}
 
-
-
-
-
-ps://www.freepik.es/fotos/freelance'>Foto de freelance creado por wayhomestudio - www.freepik.es</a><a href='htt
-
-<a href='https://www.freepik.es/fotos/escritorio-trabajo'>Foto de escritorio trabajo creado por wayhomestudio - www.freepik.es</a>
