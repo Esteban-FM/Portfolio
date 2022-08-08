@@ -8,32 +8,6 @@
     --tipo-principal:'Nunito', sans-serif;
 }
 
-/* 
-.header{
-    width:100%;
-    min-height:5rem;
-    
-    padding:1em 2em;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    display: none;
-}
-.header .h1{}
-.header .h1 .a{}
-.header .nav{}
-.header .ul{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    aling-items: center;
-}
-.header .li{
-    padding: 1em;
-} */
 
 h5{
     color: #000;
